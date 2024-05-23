@@ -30,8 +30,17 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
+
+RISING_CHIPSET="Snapdragon 778G"
+RISING_MAINTAINER="Arslan"
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+WITH_GMS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_EXCLUDES_AUDIOFX := true
+PRODUCT_NO_CAMERA := false
 
 # NFC
 TARGET_HAVE_SEC_NFC := true
