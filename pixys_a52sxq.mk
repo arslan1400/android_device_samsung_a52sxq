@@ -23,8 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common aosp stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common pixys stuff
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -37,7 +37,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_HAVE_SEC_NFC := true
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_a52sxq
+PRODUCT_NAME := pixys_a52sxq
 PRODUCT_DEVICE := a52sxq
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A528B
