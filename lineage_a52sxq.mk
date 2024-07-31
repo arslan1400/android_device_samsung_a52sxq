@@ -30,8 +30,24 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Matrixx
+MATRIXX_BUILD_TYPE := UNOFFICIAL
+MATRIXX_MAINTAINER := Arslan
+MATRIXX_CHIPSET := SM7325
+MATRIXX_BATTERY := 4500mah
+MATRIXX_DISPLAY := 1080x2400
+TARGET_SUPPORTS_64_BIT_APPS := true
+
+#Device has UDFPS:
+TARGET_HAS_UDFPS := true
+
+#Blur effect
+TARGET_ENABLE_BLUR := true
+
+# Nuke AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
 
 # NFC
 TARGET_HAVE_SEC_NFC := true
