@@ -28,6 +28,10 @@ $(call inherit-product, vendor/samsung/a52sxq/a52sxq-vendor.mk)
 PRODUCT_PACKAGES += \
     init.a52sxq.rc
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
